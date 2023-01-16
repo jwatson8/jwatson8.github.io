@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+      html {
+    scroll-behavior: smooth;
+}
+
+#nav {
+    background-color: #000;
+    color: #fff;
+    height: 80px;
+    width: 100%;
+    padding-top: 1px;
+}
+
+#left {
+    float: left;
+    margin: 5px 15px;
+    font-size: 60px;
+}
+
+.img {
+    height: 20px;
+    width: 20px;
+    background-color: pink;
+}
+  
+#projects {
+    margin-left: 30px;
+    margin-top: 20px;
+    float: left;
+    height: 60px;
+    width: 500px;
+    font-size: 40px;
+    color: white;
+}
+
+#hours {
+    margin-right: 30px;
+    margin-top: 20px;
+    float: right;
+    height: 60px;
+    max-width: 700px;
+    font-size: 40px;
+    color: white;
+}
+
+.picture {
+    height: 80px;
+    width: 80px;
+    background-color: purple;
+  }
+   
+  .whitespace {
+      width: 100%;
+      height: 200px;
+      background-color: white;
+      margin: 0px;
+      padding: 0px;
+  }
+   
+  .gradient {
+      max-width: 100%;
+      height: 550px;
+      background: linear-gradient(60deg, #fc0000, #0d14a1);
+      background-size: 600% 100%;
+      animation: gradient 5s linear infinite;
+      animation-direction: alternate;
+      margin: 0px;
+      padding: 15px;
+  }
+
+  .cool {
+    height: 25px;
+    width: 100px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-right: 15px;
+    float: right;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 15px;
+  }
+
+  .cool:hover {
+    border: 1px solid white;
+  }
+
+  .cool:active {
+    height: 25px;
+    width: 100px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-right: 15px;
+    float: right;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 15px;
+    border: 1px solid white;
+  }
+
+  @keyframes gradient {
+      0% {background-position: 0%}
+      100% {background-position: 100%}
+  }
+   
+  #picture {
+      width: 400px;
+      float: left;
+      background-color: white;
+      margin-right: 15px;
+      margin-top: 20px;
+      padding: 0px;
+      border: 2px solid black;
+      box-shadow: 4px 6px;
+  }
+   
+  #name {
+      font-size: 100px;
+      margin: 0px;
+      padding: 0px;
+      text-align: justify;
+  }
+   
+  #paragraph {
+      font-size: 40px;
+  }
+   
+  #footer {
+      text-align: center;
+      background-color: black;
+      color: white;
+      height: 80px;
+      padding-top: 20px;
+      font-size: 30px;
+  }
+  
+  .img {
+    height: 20px;
+    width: 20px;
+    background-color: purple;
+    margin-right: 5px;
+  }
+  
+  .picture {
+    height: 80px;
+    width: 80px;
+    background-color: purple;
+    float: left;
+  }
+  
+  #form {
+    min-height: 577px;
+    width: 780px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:  15px;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    padding-right: 25px;
+  }
+  
+  #first-last {
+    margin-top: 10px;
+    height: 40px;
+    border-radius: 5px;
+    width: 150px;
+    padding: 5px;
+  }
+  
+  #subject {
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px;
+  }
+  
+  #email {
+    height: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+    padding: 5px;
+  }
+  
+.grow {
+    transition: all .2s ease-in-out;
+    display: inline-block;
+}
+
+.grow:hover { 
+    transform: scale(1.1);
+}
+
+.grow1 {
+    transition: all .2s ease-in-out;
+    display: inline-block;
+    padding: 60px;
+}
+
+.grow1:hover { 
+    transform: scale(1.1);
+}
+
+#service {
+    text-align: center;
+    position: relative;
+}
+
+#top-l {
+    position: relative;
+    width: 500px;
+    height: 410px;
+    margin: 20px 20px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 10px;
+    background-image: url(IMG_0359.jpg);
+    background-size: cover;
+}
+
+#top-l:hover {
+    border-radius: 50%;
+}
+
+#top-r {
+    position: relative;
+    width: 500px;
+    height: 410px;
+    margin: 20px 20px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 10px;
+    background-image: url(IMG_0361.jpg);
+    background-size: cover;
+}
+
+#top-r:hover {
+    border-radius: 50%;
+}
+
+#floor {
+    position: relative;
+    width: 500px;
+    height: 410px;
+    margin: 20px 20px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 10px;
+    background-image: url(IMG_0363.jpg);
+    background-size: cover;
+}
+
+#floor:hover {
+    border-radius: 50%;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Roboto:wght@400&display=swap');
+  
+  *{
+      margin: 0;
+      padding: 0;
+  }
+  
+  body{
+      width: 100%;
+      min-height: 800px;
+      font-family: 'dosis';
+      color: #080808;
+      background: white;
+  }
+  
+  .container{
+      position: relative;
+      width: 800px;
+      min-width: 350px;
+      min-height: 250px;
+      padding-bottom: 40px;
+      overflow: hidden;
+  }
+  
+  .wrapper{
+      width: 300%;
+      /* 300% 'caz we have 3 cards */
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      transition: 1s;
+  }
+  
+  .card{
+      width: 800px;
+      height: 300px;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      margin: 0 10px;
+  }
+  
+  .card-thumb{
+      width: 70%;
+      height: 250px;
+      overflow: hidden;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      position: relative;
+  }
+  
+  .client-img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  
+  .client-name{
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+      padding: 5px 20px;
+      background: #fff;
+      text-transform: capitalize;
+      font-size: 14px;
+  }
+  
+  .card-body{
+      width: 120%;
+      height: 300px;
+      height: auto;
+      margin-left: 20px;
+      position: relative;
+      padding-bottom: 50px;
+  }
+  
+  .review{
+      font-size: 20px;
+      line-height: 30px;
+      margin-top: 30px;
+      height: 250px;
+      overflow-y: scroll;
+  }
+  
+  .rating{
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .star{
+      width: 25px;
+      margin-right: 5px;
+  }
+  
+  .indicators{
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+  
+  .indicators button{
+      background: none;
+      border: none;
+      outline: none;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      border: 2px solid #000;
+      cursor: pointer;
+      margin-left: 5px;
+      transition: .5s;
+  }
+  
+  button.active{
+      width: 40px;
+      border-radius: 50px;
+      background: #fff;
+  }
+  
+  @media (max-width: 800px){
+      .container{
+          width: 50%;
+          margin: auto;
+      }
+      .card{
+          flex-direction: column;
+      }
+      .card-thumb{
+          width: 100%;
+          border-radius: 10px;
+      }
+      .card-body{
+          width: 100%;
+          min-height: auto;
+          margin-left: 0;
+      }
+  }
+    </style>
+</head>
+<body>
+    <div id = 'nav'>
+        <div id = 'left'>Jace Watson</div>
+        <div><a href="#form" class = 'gradient cool grow'><button style = 'background: transparent; color: white; border: transparent; font-family: serif; font-size: 20px;'>Contact</button></a></div>
+    </div>
+    <div class = 'gradient'>
+        <img src = 'watson.jpg' id = 'picture'>
+        <h1 id = 'name'>Front-end Developer</h1>
+        <br><br><br><br><br>
+        <p id = 'paragraph'>Hello! My name is Jace Watson and I am an aspiring software developer who mainly focuses on font-end development and projects. Thus far I have completed projects for businesses such as ZimZum Massage as well as institutions such as Frederic Remington High School.</p>
+        <div id = 'projects'>Projects Completed: 28</div>
+        <div id = 'hours'>Hours Spent Programming: 310</div>
+    </div>
+    <div class = 'whitespace'></div>
+<center>
+<div class="container">
+        <div class="wrapper">
+            <div class="card">
+                <div class="card-thumb">
+                    <img src = "Annie's Picture.jpg" class = 'client-img'>
+                    <span class="client-name">Annie Watson</span>
+                </div>
+                <div class="card-body">
+                    <p class="review">Earlier this year I was going into a new school, as scared as I was about everything, I was really worried about math. Coming from a private school I was scared that the other students followed a different ciriculum then I did, so I asked my brother if he could help me out. At the time he was coding many different things so he knew exactly how to help me learn and practice my math. He created a website that was all about percentages which is what I was mainly concerned about, it was a very helpful way for me to practice because it would give me multiple questions and whenever I got it wrong the screen would say "that was a tough one, keep trying". it was a positive and fun way to learn and I am truly thankful that Jace has made something that will help me thrive and succeed throughout my math course.</p>
+                    <div class="rating">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-thumb">
+                    <img src = 'Deandra Sommers.jpg' class = 'client-img'>
+                    <span class="client-name">Deandra Sommers</span>
+                </div>
+                <div class="card-body">
+                    <p class="review">This past school year, I had the amazing opportunity to see Jace thrive in my classroom as he embraced his creativity while renovating our district website. Jace was put in a leadership role where he surpassed my expectations. He was responsible for the layout and ease of the website, along with creating content for the site.   With his assistance, our class provided a professional, user-friendly website that offers a great first impression of our school.</p>
+                    <div class="rating">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-thumb">
+                    <img src = 'Mama.jpg' class = 'client-img'>
+                    <span class="client-name">Karis Rozof</span>
+                </div>
+                <div class="card-body">
+                    <p class="review">Shortly after starting ZimZum Massage, I was looking for ways to increase my company’s public appearance. I told my son about this, and he had the idea of building a marketing email for my business to help increase customer retention and new customer orders. While the original template was good, after sending it to a few people, Jace thought that he could do better and is continuing to improve the marketing template today.</p>
+                    <div class="rating">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="indicators">
+            <button class="active"></button>
+            <button></button>
+            <button></button>
+        </div>
+    </div>
+</center>
+  <div class = 'whitespace'></div>
+    <div id = 'service'>
+        <div id = 'top-l' class = 'grow1'>Python Scripts</div>
+        <div id = 'top-r' class = 'grow1'>Web Development</div>
+        <div id = 'floor' class = 'grow1'>Email Marketing</div>
+    </div>
+  <div class = 'whitespace'></div>
+  <form action="mailto:jake1watson@gmail.com" method="post" enctype="text/plain" id = 'form'>
+    Name:<br>
+    <textarea type = 'text' id = 'first-last' placeholder = 'Your Name' name = 'NAME'></textarea><br><br>
+    Subject:<br>
+    <textarea type = 'text' id = 'subject' placeholder = 'Random Subject' name = 'SUBJECT'></textarea><br><br>
+    Email:<br>
+    <textarea type = 'text' id = 'email' placeholder = 'Begin Typing Here' name = 'MESSAGE'></textarea><br><br>
+    <input class = 'gradient cool grow' type = 'submit' value = 'Contact' style = 'color: white; font-family: serif; font-size: 20px; height: 60px;'>
+  </form>
+  <div class = 'whitespace'></div>
+    <div id = 'footer'>
+        316-932-4240<br>
+        jaceisaaacwatson@gmail.com
+    </div>
+    <script>
+      const wrapper = document.querySelector('.wrapper');
+const indicators = [...document.querySelectorAll('.indicators button')];
+
+let currentTestimonial = 0; // Default 0
+
+indicators.forEach((item, i) => {
+    item.addEventListener('click', () => {
+        indicators[currentTestimonial].classList.remove('active');
+        wrapper.style.marginLeft = `-${100 * i}%`;
+        item.classList.add('active');
+        currentTestimonial = i;
+    })
+})
+
+let button = document.getElementById('top-l');
+let button1 = document.getElementById('top-r');
+let button2 = document.getElementById('floor');
+
+button.addEventListener('mouseover', add);
+button.addEventListener('mouseout', subtract);
+button1.addEventListener('mouseover', add1);
+button1.addEventListener('mouseout', subtract1);
+button2.addEventListener('mouseover', add2);
+button2.addEventListener('mouseout', subtract2);
+
+function add(){
+    button.innerHTML = 'Python Scripts<br><br><p>Python Scripts are a useful way to automate both simple and complex tasks for your business</p>';
+    button.style.backgroundImage = 'None';
+    button.style.backgroundColor = 'black';
+    button1.innerHTML = 'Web Development<br><br><br><br><br><br>'
+}
+
+function subtract(){
+    button.innerHTML = 'Python Scripts';
+    button.style.backgroundColor = 'None';
+    button.style.backgroundImage = "url('IMG_0359.jpg')";
+    button1.innerHTML = 'Web Development';
+}
+
+function add1(){
+    button.innerHTML = 'Python Scripts<br><br><br><br><br><br>';
+    button1.style.backgroundImage = 'None';
+    button1.style.backgroundColor = 'black';
+    button1.innerHTML = "Web Development<br><br><p>Web Development/Updates makes your business much more accessible to online consumers</p>";
+}
+
+function add2(){
+    button2.innerHTML = 'Email Marketing<br><br><p>Email Marketing allows your business to reach consumers in personal ways that make them more likely to interact with your company</p>';
+    button2.style.backgroundImage = 'None';
+    button2.style.backgroundColor = 'black';
+}
+
+function subtract1(){
+    button.innerHTML = 'Python Scripts';
+    button1.style.backgroundColor = 'None';
+    button1.style.backgroundImage = "url('IMG_0361.jpg')";
+    button1.innerHTML = 'Web Development';
+}
+
+function subtract2(){
+    button2.innerHTML = 'Email Marketing';
+    button2.style.backgroundColor = 'None';
+    button2.style.backgroundImage = "url('IMG_0363.jpg')";
+}
+    </script>
+</body>
+</html>
